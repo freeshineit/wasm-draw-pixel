@@ -1,0 +1,104 @@
+$background: #fff;
+
+$primary-color: #0099e5;
+
+$sider-width: 120px;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $background;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-right: $sider-width;
+}
+
+canvas.eraser {
+  cursor: url("./image/eraser.png"), auto;
+}
+
+.sider {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  width: $sider-width;
+  box-shadow: -2px 0px 5px #ddd;
+  background-color: #fff;
+  padding: 5px 10px;
+  z-index: 999;
+
+  .btn-group {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input[type="color"] {
+      width: 80px;
+    }
+  }
+
+  .btn-group > span {
+    padding: 3px 0px;
+    display: inline-block;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+
+    & + span {
+      margin-top: 6px;
+    }
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .btn-group > button {
+    padding: 3px 5px;
+    cursor: pointer;
+    border: 1px solid #aaa;
+    border-radius: 0px;
+    color: #000;
+    background-color: #fff;
+    width: 100%;
+
+    &:hover {
+      border: 1px solid $primary-color;
+
+      color: $primary-color;
+    }
+
+    & + button {
+      margin-top: 10px;
+    }
+  }
+
+  #eraser.active {
+    color: $primary-color;
+  }
+
+  .btn-group > label {
+    display: flex;
+
+    & + label {
+      margin-top: 10px;
+    }
+
+    input {
+      width: 55px;
+    }
+  }
+}
