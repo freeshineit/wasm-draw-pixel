@@ -3,7 +3,6 @@
 ## Use
 
 ```bash
-
 #
 yarn install
 
@@ -19,6 +18,7 @@ cd dist && http-server -p 8080
 
 ```
 
+![demo](./demo.png)
 ## Catalogue
 
 ```bash
