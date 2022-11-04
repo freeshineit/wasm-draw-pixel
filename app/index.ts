@@ -21,7 +21,7 @@ import("../wasm/pkg").then((module) => {
       internal,
       currentColor: [0, 0, 0],
       dragging: false,
-      eraserColor: []
+      eraserColor: [],
     };
 
     draw(state);
@@ -237,8 +237,6 @@ function downloadImage(type: "image/png" | "image/jpeg", image: WImage) {
 
   ctx.putImageData(imageData, 0, 0);
 
-  document.body.appendChild(canvas);
-
   console.timeEnd("downloadImage");
 
   // 创建一个 a 标签，并设置 href 和 download 属性
@@ -250,8 +248,6 @@ function downloadImage(type: "image/png" | "image/jpeg", image: WImage) {
   // 创建一个点击事件并对 a 标签进行触发
   const event = new MouseEvent("click");
   el.dispatchEvent(event);
-
-  document.body.removeChild(canvas);
 }
 
 function toggleEraser(state: IState) {
