@@ -1,13 +1,13 @@
 {
-  "name": "wasm_canvas",
+  "name": "wasm_draw_pixel",
   "version": "1.0.0",
-  "description": "WebAssembly parse markdown",
+  "description": "WebAssembly draw pixel",
   "main": "index.js",
   "keywords": [
     "wasm",
-    "markdown",
     "Rust",
-    "WebAssembly"
+    "WebAssembly",
+    "draw pixel"
   ],
   "author": "ShineShao <xiaoshaoqq@gmial.com>",
   "license": "MIT",
