@@ -3,7 +3,7 @@
 ## Use
 
 ```bash
-#
+# install
 yarn install
 
 # development
