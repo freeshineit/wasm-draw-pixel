@@ -1,5 +1,6 @@
 # Wasm Draw pixel
 
+![build](https://github.com/freeshineit/wasm-draw-pixel/workflows/build/badge.svg)
 ## Use
 
 ```bash
