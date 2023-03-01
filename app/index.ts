@@ -1,6 +1,7 @@
-import "./style.scss";
 import { hex2Rgb } from "./utils";
 import { Image as WImage, InternalState } from "../wasm/pkg";
+
+import "./style.scss";
 
 const cellSize = 30;
 
